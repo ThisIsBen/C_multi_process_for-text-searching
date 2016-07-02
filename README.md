@@ -14,15 +14,15 @@ The program should spilt the input file into multiple segments. 
 Each process searches through a segment and counts the number of occurrences of the key word in that segment. 
 
 -Input 
-1st argument:  path name of the input file    (Ex. input.txt)  
-2nd argument: the keyword that needs to be searched (Ex. “oslab2015”) 
+1st argument:  path name of the input file    (Ex. testFile.txt)  
+2nd argument: the keyword that needs to be searched (Ex. “oslab2015”)  (There are 9   “oslab2015” in testFile.txt in total.)
 3rd argument: number of processes performing keyword-searching (Ex. 3)  
-  Ex. $./multi_process input.txt "os2015" 3 
+  Ex. $./multi_process testFile.txt "os2015" 3 
 
 -Output 
 print the result of occurrences both by each process and by all processes  
-  Ex. process1:5 process2:12 process3:2 total:19
-  
+  Ex. process1:2 process2:3 process3:4 total:9
+ (There are 9   “oslab2015” in testFile.txt in total.)
   
 Note:
   fork() system call is used to create a new process 
