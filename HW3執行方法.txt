@@ -1,0 +1,2 @@
+gcc shmmatch.c -lrt -o shmmatch
+./shmmatch pig.c(target filename) 121(keywords) 3(Num of child process)
